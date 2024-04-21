@@ -199,7 +199,6 @@ Type &List<Type>::operator[](int index)
 {
     if(ptr_first == nullptr || index < 0)
     {
-        //std::cout << "Вы вышли за границы списка!\n";
         throw std::out_of_range("Вы вышли за границы списка!");
     }
 
@@ -209,7 +208,6 @@ Type &List<Type>::operator[](int index)
     {
         if(ptr_first_cope->ptr_next == nullptr)
         {
-            //std::cout << "Вы вышли за границы списка!\n";
             throw std::out_of_range("Вы вышли за границы списка!");
         }
         ptr_first_cope = ptr_first_cope->ptr_next;
